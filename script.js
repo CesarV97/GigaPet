@@ -40,10 +40,12 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
       pet_info.weight-=2;
       checkAndUpdatePetInfoInHtml();
     }
-
+    function normalPepe(){
+      document.getElementById("image").src="https://cdn.glitch.me/c96e7747-7443-477b-89ae-aa8da73a09af%2Fpepedance.gif?v=1637091933883";
+      }
     function clickedSuperdanceButton(){
       document.getElementById("image").src="https://cdn.glitch.me/c96e7747-7443-477b-89ae-aa8da73a09af%2Ffast-dancingPepe.gif?v=1637093607630";
-      setTimeout(document.getElementById("image").src="https://cdn.glitch.me/c96e7747-7443-477b-89ae-aa8da73a09af%2Ffast-dancingPepe.gif?v=1637093607630", 1000);
+      setTimeout(normalPepe, 10500);
       var audio = new Audio('https://cdn.glitch.me/c96e7747-7443-477b-89ae-aa8da73a09af%2FMario%20-%20Star%20Power%20Sound%20Effect.mp3?v=1637097456210');
       audio.play(10);
     }
