@@ -9,6 +9,7 @@
     background-image:url(https://cdn.glitch.me/c96e7747-7443-477b-89ae-aa8da73a09af%2F560435_dance-floor_1600x1071_h.png?v=1637092479252);
     background-size: 100% auto;
     background-repeat: no-repeat;
+    background-position: center top;
   }
   
   main {
@@ -22,7 +23,7 @@
   
   h1 {
     font-weight: bold;
-    color: #000;
+    color: white;
   }
   
   .bold {
@@ -54,6 +55,7 @@
   
   .dashboard div {
     display:block;
+    color: white;
   }
   
   .pet-image-container {
