@@ -19,7 +19,7 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
     
     function clickedTreatButton() {
       // Increase pet happiness
-      pet_info.weight+=2;
+      pet_info.weight+=0.5;
       // Increase pet weight
       pet_info.happiness+=1;
       checkAndUpdatePetInfoInHtml();
@@ -27,9 +27,9 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
     
     function clickedPlayButton() {
       // Increase pet happiness
-      pet_info.happiness+=2;
+      pet_info.happiness+=1;
       // Decrease pet weight
-      pet_info.weight-=2;
+      pet_info.weight-=0.5;
       checkAndUpdatePetInfoInHtml();
     }
     
@@ -37,7 +37,7 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
       // Decrease pet happiness
       pet_info.happiness-=1;
       // Decrease pet weight
-      pet_info.weight-=2;
+      pet_info.weight-=1;
       document.getElementById("image").src="https://cdn.glitch.me/c96e7747-7443-477b-89ae-aa8da73a09af%2Fswolepepe-removebg-preview.png?v=1637104734486";
       setTimeout(normalPepe, 2000);
       
