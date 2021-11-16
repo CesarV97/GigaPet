@@ -18,21 +18,25 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
   
     function clickedTreatButton() {
       // Increase pet happiness
-      pet_info.weight++2;
-      
+      pet_info.weight+=2;
       // Increase pet weight
+      pet_info.happiness+=1;
       checkAndUpdatePetInfoInHtml();
     }
     
     function clickedPlayButton() {
       // Increase pet happiness
+      pet_info.happiness+=1;
       // Decrease pet weight
+      pet_info.weight-=2;
       checkAndUpdatePetInfoInHtml();
     }
     
     function clickedExerciseButton() {
       // Decrease pet happiness
+      pet_info.happiness+=1;
       // Decrease pet weight
+      pet_info.weight-=2;
       checkAndUpdatePetInfoInHtml();
     }
   
