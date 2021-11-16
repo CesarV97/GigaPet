@@ -18,7 +18,7 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
   
     function clickedTreatButton() {
       // Increase pet happiness
-      pet_info[1]+1;
+      pet_info.weight++2;
       
       // Increase pet weight
       checkAndUpdatePetInfoInHtml();
