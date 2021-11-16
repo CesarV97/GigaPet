@@ -27,7 +27,7 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
     
     function clickedPlayButton() {
       // Increase pet happiness
-      pet_info.happiness+=1;
+      pet_info.happiness+=2;
       // Decrease pet weight
       pet_info.weight-=2;
       checkAndUpdatePetInfoInHtml();
@@ -38,6 +38,9 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
       pet_info.happiness-=1;
       // Decrease pet weight
       pet_info.weight-=2;
+      document.getElementById("image").src="https://cdn.glitch.me/c96e7747-7443-477b-89ae-aa8da73a09af%2Fswolepepe-removebg-preview.png?v=1637104734486";
+      setTimeout(normalPepe, 2000);
+      
       checkAndUpdatePetInfoInHtml();
     }
     
@@ -47,12 +50,14 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
       }
     
 
-function clickedSuperdanceButton(){
+    function clickedSuperdanceButton(){
+      pet_info.happiness=10;
+      pet_info.weight=3;
       document.getElementById("image").src="https://cdn.glitch.me/c96e7747-7443-477b-89ae-aa8da73a09af%2Ffast-dancingPepe.gif?v=1637093607630";
       setTimeout(normalPepe, 10500);
       var audio = new Audio('https://cdn.glitch.me/c96e7747-7443-477b-89ae-aa8da73a09af%2FMario%20-%20Star%20Power%20Sound%20Effect.mp3?v=1637097456210');
       audio.play(10);
-      
+      checkAndUpdatePetInfoInHtml();
     }
   
     function checkAndUpdatePetInfoInHtml() {
@@ -65,6 +70,11 @@ function clickedSuperdanceButton(){
       if (pet_info.weight < 0){
         
         pet_info.weight = 0.1;
+        
+      }
+      if (pet_info.happiness < 0){
+        
+        pet_info.happiness = 0.1;
         
       }
     }
