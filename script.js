@@ -16,6 +16,8 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
   
     // Add a variable "pet_info" equal to a object with the name (string), weight (number), and happiness (number) of your pet
     var pet_info = {name:"Pepe", weight: 5, happiness: 1};
+    var x = new Audio('https://cdn.glitch.me/c96e7747-7443-477b-89ae-aa8da73a09af%2FLady%20Hear%20Me%20Tonight.mp3?v=1637096717943');
+    x.play();
     
     function clickedTreatButton() {
       // Increase pet happiness
@@ -54,6 +56,7 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
     
 
     function clickedSuperdanceButton(){
+      x.pause();
       pet_info.happiness=10;
       pet_info.weight=3;
       document.getElementById("image").src="https://cdn.glitch.me/c96e7747-7443-477b-89ae-aa8da73a09af%2Ffast-dancingPepe.gif?v=1637093607630";
@@ -61,6 +64,7 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
       audio.play();
       setTimeout(normalPepe, 13000);
       checkAndUpdatePetInfoInHtml();
+
     }
   
     function checkAndUpdatePetInfoInHtml() {
