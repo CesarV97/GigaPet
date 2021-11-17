@@ -36,6 +36,7 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
     }
     
     function clickedExerciseButton() {
+      x.pause();
       // Decrease pet happiness
       pet_info.happiness-=1;
       // Decrease pet weight
@@ -52,6 +53,7 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
     
     function normalPepe(){
       document.getElementById("image").src="https://cdn.glitch.me/c96e7747-7443-477b-89ae-aa8da73a09af%2Fpepedance.gif?v=1637091933883";
+      x.play();
       }
     
 
@@ -64,7 +66,6 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
       audio.play();
       setTimeout(normalPepe, 13000);
       checkAndUpdatePetInfoInHtml();
-
     }
   
     function checkAndUpdatePetInfoInHtml() {
