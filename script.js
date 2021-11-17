@@ -39,7 +39,10 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
       // Decrease pet weight
       pet_info.weight-=1;
       document.getElementById("image").src="https://cdn.glitch.me/c96e7747-7443-477b-89ae-aa8da73a09af%2Fswolepepe-removebg-preview.png?v=1637104734486";
-      setTimeout(normalPepe, 2000);
+      var audio = new Audio('https://cdn.glitch.me/c96e7747-7443-477b-89ae-aa8da73a09af%2Fsuper%20saiyan%20scream.mp4.mp3?v=1637106744008');
+      audio.play();
+      
+      setTimeout(normalPepe, 6000);
       
       checkAndUpdatePetInfoInHtml();
     }
